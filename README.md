@@ -1,6 +1,11 @@
 ![Placeholder](./placeholder.jpg) <br/>
 
-# Music Application
+# Title 
+---
+EMO -  Music Application
+
+## Description
+---
 
 ## User Story
 ---
@@ -15,4 +20,7 @@ The function of the App provide the listener with music and  ?podcast? that is d
 4. It is done when user can rate or react to different songs with emojis. 
 
 ## Wireframe
+---
+
+## APIs
 ---
