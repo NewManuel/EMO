@@ -4,6 +4,7 @@
 
 ## Description
 ---
+Imagine your feeling upset about something and want to uplift your spirit, EMO is the app that can do that. You open the application choose what emotion you currently feel and how you want to feel from a list of emoji signs  and the application chooses a  genre, artist and song tailored to your profile preference; and "walla!" your on to a better more cheerful day.
 
 ## User Story
 ---
