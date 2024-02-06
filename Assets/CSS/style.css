@@ -1,92 +1,61 @@
-/* Reset default margin and padding */
-body,
-html {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    /* Default font family */
+/* Default light theme */
+:root {
+    --background-color: #f0f0f0;
+    /* Light gray background */
+    --text-color: #333;
+    /* Dark gray text color */
 }
 
-/* Container for the entire app */
-.app-container {
-    width: 100%;
-    height: 100vh;
-    /* Full height of the viewport */
-    background-color: #f0f0f0;
-    /* Light gray background */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+/* Dark theme */
+.dark-theme {
+    --background-color: #333;
+    /* Dark background */
+    --text-color: #fff;
+    /* White text color */
+}
+
+/* Apply theme to the entire app */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 /* Header style */
 .header {
-    background-color: #333;
-    /* Dark gray background for header */
-    color: #fff;
-    /* White text color */
-    padding: 15px 20px;
-    /* Padding for header content */
-    width: 100%;
-    text-align: center;
-    font-size: 24px;
+    background-color: var(--text-color);
+    /* Use text color as background */
+    color: var(--background-color);
+    /* Use background color as text color */
 }
 
 /* Navigation menu */
 .nav-menu {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    background-color: #444;
-    /* Dark gray background for menu */
-    padding: 10px 0;
-}
-
-.nav-item {
-    color: #fff;
-    /* White text color */
-    text-decoration: none;
-    padding: 5px 10px;
+    background-color: var(--text-color);
+    /* Use text color as background */
+    color: var(--background-color);
+    /* Use background color as text color */
 }
 
 /* Content area */
 .content {
-    padding: 20px;
-    width: 100%;
+    background-color: var(--background-color);
 }
 
 /* Button style */
 .button {
-    background-color: #007bff;
-    /* Blue button color */
-    color: #fff;
-    /* White text color */
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 16px;
+    background-color: var(--text-color);
+    color: var(--background-color);
 }
 
 /* Input field style */
 .input-field {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
 }
 
 /* Footer style */
 .footer {
-    background-color: #333;
-    /* Dark gray background for footer */
-    color: #fff;
-    /* White text color */
-    padding: 10px;
-    width: 100%;
-    text-align: center;
+    background-color: var(--text-color);
+    color: var(--background-color);
 }
