@@ -1,3 +1,5 @@
+// models/User.js
+
 const { Model, DataTypes } = require('sequelize');
 const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
@@ -34,6 +36,10 @@ User.init(
       validate: {
         len: [8],
       },
+    },
+    selectedEmotion: {
+      type: DataTypes.STRING, // Add the selectedEmotion field
+      allowNull: true, // Allow null for now, as the user will select it during registration
     },
   },
   {

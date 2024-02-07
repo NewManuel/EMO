@@ -1,42 +1,71 @@
-<div class="row">
-  <div class="col-md-6">
-    <h2>Login</h2>
+<!-- login.handlebars -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Emo!</title>
+    <style>
+        body {
+            text-align: center; /* Center the text in the body */
+        }
 
-    <form class="form login-form">
+        h1, h3 {
+            margin-top: 20px; /* Add some top margin for better spacing */
+        }
+
+        img {
+            width: 40%; /* Set the width to 40% of the window width */
+            max-width: 100%; /* Ensure the image doesn't exceed its natural size */
+            height: auto; /* Maintain the aspect ratio */
+            display: block; /* Remove any extra spacing below the image */
+            margin: 0 auto; /* Center the image horizontally */
+        }
+
+        .login-signup {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px; /* Add some top margin for better spacing */
+        }
+
+        .login-signup a {
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border: 1px solid #333;
+            color: #333;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .login-signup a:hover {
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+    <script defer src="js/app.js"></script>
+    <link rel="icon" type="image/x-icon" href="images/emo_logo.png">
+</head>
+<body>
+    <h1>Welcome to Emo!</h1>
+    <img src="images/main_pic.png" alt="Emo Logo">
+    <h3>login</h3>
+    <form class="form login-form" action="/login" method="post">
       <div class="form-group">
         <label for="email-login">email:</label>
-        <input class="form-input" type="text" id="email-login" />
+        <input class="form-input" type="text" id="email-login" name="email" /> <!-- Add name attribute -->
       </div>
       <div class="form-group">
         <label for="password-login">password:</label>
-        <input class="form-input" type="password" id="password-login" />
+        <input class="form-input" type="password" id="password-login" name="password" /> <!-- Add name attribute -->
       </div>
       <div class="form-group">
         <button class="btn btn-primary" type="submit">login</button>
       </div>
     </form>
   </div>
-  <div class="col-md-6">
-    <h2>Signup</h2>
-
-    <form class="form signup-form">
-      <div class="form-group">
-        <label for="name-signup">name:</label>
-        <input class="form-input" type="text" id="name-signup" />
-      </div>
-      <div class="form-group">
-        <label for="email-signup">email:</label>
-        <input class="form-input" type="text" id="email-signup" />
-      </div>
-      <div class="form-group">
-        <label for="password-signup">password:</label>
-        <input class="form-input" type="password" id="password-signup" />
-      </div>
-      <div class="form-group">
-        <button class="btn btn-primary" type="submit">signup</button>
-      </div>
-    </form>
-  </div>
 </div>
 
 <script src="./js/login.js"></script>
+</body>
+</html>
