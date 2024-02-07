@@ -1,0 +1,31 @@
+<!-- mainLayout.handlebars -->
+<div id="side-panel">
+    <div id="profile-section">
+        <img id="profile-pic" src="images/main_pic.png" alt="Profile Pic">
+    </div>
+    <div id="settings-menu">
+        <p>Settings</p>
+        <p>Logout</p>
+    </div>
+    <button id="change-emotion">Change Emotion</button>
+</div>
+
+<div id="main-content">
+    <div id="music-player">
+        {{{body}}} <!-- This is where the content of specific pages will be injected -->
+    </div>
+</div>
+
+<script>
+    // Toggle settings menu
+    document.getElementById('profile-pic').addEventListener('click', function () {
+        const settingsMenu = document.getElementById('settings-menu');
+        settingsMenu.style.display = (settingsMenu.style.display === 'block') ? 'none' : 'block';
+    });
+
+    // Example: Change emotion button click handler
+    document.getElementById('change-emotion').addEventListener('click', function () {
+        // Handle changing emotion
+        alert('Emotion changed!');
+    });
+</script>

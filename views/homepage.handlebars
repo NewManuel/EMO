@@ -1,26 +1,62 @@
-<!-- Loop over each object in the projects array -->
-{{!-- {{#each projects as |project| }}
-<div class="row mb-4 project">
-  <div class="col-md-5">
-    <h2>
-      <!-- Call helper function with triple brackets to render the emoji span as HTML -->
-      {{{get_emoji}}}
-      <a href="/project/{{project.id}}">{{project.name}}</a>
-    </h2>
-    <p>
-      <span for="img" aria-label="money">💲</span>
-      <!-- Pass needed_funding value to the helper function -->
-      <span class="dollar-amount">{{format_amount project.needed_funding}}</span>
-      needed!
-    </p>
-    <p>Created by {{project.user.name}} on {{format_date project.date_created}}</p>
-  </div>
-  <div class="col-md-7">
-    <p>
-      {{project.description}}
-    </p>
-  </div>
-</div>
-{{/each}} --}}
+<!-- homepage.handlebars -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Emo!</title>
+    <style>
+        body {
+            text-align: center; /* Center the text in the body */
+        }
 
-<h1> Welcome to my Page</h1>
+        h1, h3 {
+            margin-top: 20px; /* Add some top margin for better spacing */
+        }
+
+        img {
+            width: 40%; /* Set the width to 40% of the window width */
+            max-width: 100%; /* Ensure the image doesn't exceed its natural size */
+            height: auto; /* Maintain the aspect ratio */
+            display: block; /* Remove any extra spacing below the image */
+            margin: 0 auto; /* Center the image horizontally */
+        }
+
+        .login-signup {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px; /* Add some top margin for better spacing */
+        }
+
+        .login-signup a {
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border: 1px solid #333;
+            color: #333;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .login-signup a:hover {
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+    <script defer src="js/app.js"></script>
+    <link rel="icon" type="image/x-icon" href="images/emo_logo.png">
+</head>
+<body>
+    <!-- Render initial HTML structure -->
+    <h1>Welcome to Emo!</h1>
+    <img src="images/main_pic.png" alt="Emo Logo">
+    <h3>Your emotion-based music app</h3>
+    <div class="login-signup">
+        <a href="/login">Login</a>
+        <a href="/signup">Signup</a>
+    </div>
+    <div id="emotionSelection">
+        <!-- Emotion selection UI goes here -->
+    </div>
+</body>
+</html>
