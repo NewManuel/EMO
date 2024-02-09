@@ -1,61 +1,67 @@
-/* Default light theme */
-:root {
-    --background-color: #f0f0f0;
-    /* Light gray background */
-    --text-color: #333;
-    /* Dark gray text color */
-}
-
-/* Dark theme */
-.dark-theme {
-    --background-color: #333;
-    /* Dark background */
-    --text-color: #fff;
-    /* White text color */
-}
-
-/* Apply theme to the entire app */
 body {
-    background-color: var(--background-color);
-    color: var(--text-color);
+    background-color: white;
+    /* Set the background color to light white */
+    margin: 0;
+    /* Remove default body margin */
+    padding: 0;
+    /* Remove default body padding */
+}
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 264px;
+    height: 155px;
+    /* Maintain aspect ratio */
+    z-index: 9999;
+    /* Ensure the image stays above other elements */
 }
 
-/* Header style */
-.header {
-    background-color: var(--text-color);
-    /* Use text color as background */
-    color: var(--background-color);
-    /* Use background color as text color */
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    background-color: #333;
+    /* Placeholder color */
+    margin-left: auto;
 }
 
-/* Navigation menu */
-.nav-menu {
-    background-color: var(--text-color);
-    /* Use text color as background */
-    color: var(--background-color);
-    /* Use background color as text color */
+.history-list {
+    width: 200px;
+    height: 300px; 
+    background-color: #40fcb4;
+        /* Change color as needed */
+    position: fixed;
+        top: 230px;
+        right: 658px;
+        width: 200px;
+        height: 300px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        text-align: center;
+        max-height: 3oopx;
+        min-height: 100px;
 }
 
-/* Content area */
-.content {
-    background-color: var(--background-color);
+#history-heading {
+        border-right: 2px solid black;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        border-top-right-radius: 10px;
+        /* Curved edge on the top right */
+        border-bottom-right-radius: 10px;
+        /* Curved edge on the bottom right */
+        padding: 0px;
+      
+
+}
+/* .thumbs-up {
+    margin: 0;
 }
 
-/* Button style */
-.button {
-    background-color: var(--text-color);
-    color: var(--background-color);
+.thumbs-down {
+margin: 0;
 }
 
-/* Input field style */
-.input-field {
-    background-color: var(--background-color);
-    color: var(--text-color);
-    border: 1px solid var(--text-color);
-}
-
-/* Footer style */
-.footer {
-    background-color: var(--text-color);
-    color: var(--background-color);
-}
+.share-button {
+ margin: 0;
+} */
