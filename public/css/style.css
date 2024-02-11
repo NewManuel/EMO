@@ -27,9 +27,9 @@ body {
     top: 50%;
     right: 0;
     transform: translate(0, -50%);
-    display: flex;
-    justify-content: flex-end;
     align-items: center;
+    display: block;
+    margin-bottom: 10px;
 }
 #like {
     background-image: url(/public/images/Like.jpg);
