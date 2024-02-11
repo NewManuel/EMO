@@ -24,12 +24,12 @@ body {
 }
 
 #like {
-    background-image: url(/Assets/images/Like.jpg);
+    background-image: url(/public/images/Like.jpg);
     justify-content: right;
 }
 
 #unlike {
-    background-image: url(/Assets/images/Unlike.jpg);
+    background-image: url(/public/images/Unlike.jpg);
     justify-content: right;
 }
 
