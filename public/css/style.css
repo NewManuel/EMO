@@ -28,6 +28,7 @@ body {
     right: 0;
     transform: translate(0, -50%);
     align-items: center;
+    /* These properties keep the this div center right */
     display: block;
     margin-bottom: 10px;
 }
