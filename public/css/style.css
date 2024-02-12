@@ -5,14 +5,9 @@ body {
     /* Remove default body margin */
     padding: 0px;
     /* Remove default body padding */
-}
-
-    
+}    
 
 .logo {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 264px;
     height: 155px;
     /* Maintain aspect ratio */
@@ -21,13 +16,8 @@ body {
     border-radius: 25px;
 }
 #Like-Buttons {
-    position: fixed;
-    top: 50%;
-    right: 0;
-    transform: translate(0, -50%);
     align-items: center;
     /* These properties keep the this div center right */
-    display: block;
     margin-bottom: 10px;
     display: flex;
     flex-direction: column;
@@ -54,14 +44,19 @@ body {
 .md.hydrated{
     font-size: 50px;
     background-color: rgb(20, 172, 113);
-    color: white;
-    
+    color: white;    
 }
 
 #play{
     background-color: rgb(20, 172, 113);
     border: transparent;
+}
 
+#Logout{
+    text-align: center;
+    color: white;
+    background-color: rgb(20, 172, 113);
+    border: transparent;
 }
 
 .profile-picture {
@@ -76,23 +71,33 @@ body {
     background-color: #40fcb4;
     color: white;
     font-size: 20px;
-    /* Change color as needed */
-    position: fixed;
-     top: 50%;
-     left: 0;
-    transform: translateY(-50%);
-    /* This set of properties keep the history-list div */
     width: 250px;
     height: 300px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-radius: 20px;
     text-align: center;
     min-height: 100px;
 }
 
 #history-heading {
     border: 2px solid black;
-    /* Curved edge */
     border-radius: 25px;
     margin: 6px;
+}
+
+#column-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#logout-container{
+    display: flex;
+    justify-content: flex-end;
+    text-align: start;
+}
+
+@media screen and (min-width: 1000px) {
+    #column-container{
+        justify-content: space-between;
+    }
 }
