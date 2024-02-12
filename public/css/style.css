@@ -13,8 +13,9 @@ body {
     /* Maintain aspect ratio */
     z-index: 9999;
     /* Ensure the image stays above other elements */
-    border-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
+
 #Like-Buttons {
     align-items: center;
     /* These properties keep the this div center right */
@@ -22,6 +23,7 @@ body {
     display: flex;
     flex-direction: column;
 }
+
 #like {
     /* background-image: url(/public/images/Like.jpg); */
     justify-content: right; 
@@ -57,13 +59,13 @@ body {
     color: white;
     background-color: rgb(20, 172, 113);
     border: transparent;
+    padding-top: 80px;
 }
 
 .profile-picture {
     width: 100px;
     height: 100px;
     background-color: #333;
-    /* Placeholder color */
     margin-left: auto;
 }
 
@@ -76,6 +78,8 @@ body {
     border-radius: 20px;
     text-align: center;
     min-height: 100px;
+    margin-top: 62px;
+    margin-left: -23px;
 }
 
 #history-heading {
@@ -88,12 +92,18 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    
+}
+
+#listening.box{
+    border: white, solid;
 }
 
 #logout-container{
     display: flex;
     justify-content: flex-end;
     text-align: start;
+    align-content: center;
 }
 
 @media screen and (min-width: 1000px) {
