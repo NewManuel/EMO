@@ -5,7 +5,7 @@
 ## Description
 ---
 
-Imagine you're feeling upset about something and want to uplift your spirit, EMO is the app that can do that. You open the application, choose what emotion you currently feel and how you want to feel from a list of emojis, and then the application chooses a genre, artist and song tailored to your profile preference; and "walla!" you're onto a better, more cheerful day.
+Imagine you're feeling upset about something and want to uplift your spirit, EMO is the app that can do that. You open the application, choose what emotion you currently feel and how you want to feel from a list of emojis, and then the application chooses a genre, artist and song tailored to your profile preference, and "voila!" you're on to a better, more cheerful day.
 
 ## User Story
 ---
@@ -28,21 +28,18 @@ As a music listener who might be in a less than ideal mood, I want an app that w
 ## APIs
 ---
 
-
+Deezer
 
 ## Tasks
 ---
 
-Michael Cosand: APIs, emojis, ??
+Michael Cosand: APIs, emojis, functionality, presentation slides.
 
-Heather Serrano: account creation/user login with sequelize, edited and added content to readme, ??
+Heather Serrano: account creation/user login with sequelize, edited and added content to readme, css.
 
-Emmanuel Nwabueze: wireframe, css, created main branch, creaded readme, ??
+Emmanuel Nwabueze: wireframe, html, css, created main branch with readme.
 
-Jacob Brown: Trello, Figma, ??
-
-<!-- ??? TO BE ADDED - Who is doing and/or did these: HTML, Javascript, Authentication ??? -->
-
+Jacob Brown: Trello, Figma, partial handlebar for dropdown menu, css.
 
 ## Deployment Link
 ---
