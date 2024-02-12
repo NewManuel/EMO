@@ -1,4 +1,4 @@
-![Placeholder](./placeholder.jpg) <br/>
+![Placeholder](./Placeholder.jpg) <br/>
 
 # Title: EMO -  Music Application
 
