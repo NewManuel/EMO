@@ -14,7 +14,7 @@ router.get('/', async (req, res) => {
     // Retrieve the playlist ID for the selected emotion
     const playlistId = emotionPlaylists[emotion];
     // Render the musicpage.handlebars template with the playlist ID
-    res.render('musicpage', { playlistId });
+    res.render('profile', { playlistId });
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: 'Internal Server Error' });
