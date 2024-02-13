@@ -2,7 +2,7 @@ require('dotenv').config();
 
 const express = require('express');
 const session = require('express-session');
-const exphbs = require('express-handlebars');
+const hbs = require('express-handlebars');
 const path = require('path');
 const { User } = require('./models'); // Import the User model
 const sequelize = require('./config/connection');
@@ -13,7 +13,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 // Set up Handlebars.js engine with custom helpers
-const hbs = exphbs.create({ /* your helpers */ });
+// const hbs = exphbs.create({ /* your helpers */ });
 
 const sess = {
   secret: 'Super secret secret',
@@ -32,7 +32,7 @@ const sess = {
 
 app.use(session(sess));
 
-app.engine('handlebars', hbs.engine);
+app.engine('handlebars', hbs({ defaultLayout: 'main', layoutsDir: __dirname + '/views/layouts/', partialsDir: __dirname + '/views/partials', helpers: undefined }));
 app.set('view engine', 'handlebars');
 app.get('/', (req, res) => {
   res.render('homepage'); // Assuming 'homepage' is the name of your main page template
@@ -103,5 +103,5 @@ app.use('/music', musicpageRoute);
 // Include your other routes or controllers here
 
 sequelize.sync({ force: false }).then(() => {
-  app.listen(PORT, () => console.log('Now listening'));
+  app.listen(PORT, () => console.log('Now listening to port: ', PORT));
 });

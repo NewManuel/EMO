@@ -1,0 +1,24 @@
+<!-- views/partials/sidebar.handlebars -->
+
+
+        <ul class="list-group list-group-flush bg-transparent">
+            <li class="list-group-item bg-transparent text-left"><a href="/music?emotion=intense" class="btn btn-link btn-sm emotion">😡 Intense</a></li>
+            <li class="list-group-item bg-transparent text-left"><a href="/music?emotion=upbeat" class="btn btn-link btn-sm emotion">😄 Upbeat</button></li>
+            <li class="list-group-item bg-transparent text-left"><a href="/music?emotion=romantic" class="btn btn-link btn-sm emotion">😍 Romantic</button></li>
+            <li class="list-group-item bg-transparent text-left"><a href="/music?emotion=chill" class="btn btn-link btn-sm emotion">😎 Chill</a></li>
+            <li class="list-group-item bg-transparent text-left"><a href="/music?emotion=sad" class="btn btn-link btn-sm emotion">😔 Sad</button></li>
+        </ul>
+
+<script>
+    document.querySelectorAll('.emotion').forEach(function (button) {
+        button.addEventListener('click', function () {
+            const emotion = this.getAttribute('data-value');
+
+            const xhr = new XMLHttpRequest();
+            xhr.open('GET', '/music', true);
+            xhr.setRequestHeader('Content-Type', 'application/json');
+
+            xhr.send(emotion);
+        })
+    })
+</script>
