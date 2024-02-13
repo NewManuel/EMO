@@ -5,7 +5,8 @@ const withAuth = require('../utils/auth');
 // Render the music player page
 router.get('/music', async (req, res) => {
   try {
-    res.render('musicpage');
+    console.log(req.session.logged_in)
+    res.render('musicpage',{logged_in:req.session.logged_in});
   } catch (err) {
     res.status(500).json(err);
   }
